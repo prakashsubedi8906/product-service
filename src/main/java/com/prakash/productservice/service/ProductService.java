@@ -1,5 +1,15 @@
 package com.prakash.productservice.service;
 
+import com.prakash.productservice.dto.Productdto;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
 public interface ProductService {
-    String getProductDetails(Long productId);
+    Productdto getProductDetails(Long productId);
+
+    Long addProduct(Productdto productdto);
+
+    List<Productdto> getAllProducts();
 }
